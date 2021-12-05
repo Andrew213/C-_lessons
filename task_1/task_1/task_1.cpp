@@ -1,55 +1,11 @@
-﻿ // task_1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// task_1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
-    setlocale(LC_ALL, "Rus");
-
-    cout << "\t\t\t\t\tLiving in America"
-        << "\n"
-        << "\t\t\t\t\tEvery day is an on-going massacre"
-        << "\n"
-        << "\t\t\t\t\tAnother one gets shot down in the streets"
-        << "\n"
-        << "\t\t\t\t\tBut they say it's the land of the free - no!"
-        << "\n"
-        << "\t\t\t\t\tEveryone has a gun, counting bullets like their Haribos"
-        << "\n"
-        << "\t\t\t\t\tSo be careful how you roll"
-        << "\n"
-        << "\t\t\t\t\tNow the playground is the danger zone"
-        << "\n"
-        << "\n"
-        << "\t\t\t\t\tOooh, oooh, oooh, ooooh"
-        << "\n"
-        << "\t\t\t\t\tLiving in America(x2)"
-        << "\n"
-        << "\t\t\t\t\tOooh, oooh, oooh, ooooh"
-        << "\n"
-        << "\t\t\t\t\tLiving in America(x2)"
-        << "\n"
-        << "\n"
-        << "\n"
-        << "\t\t\t\t\t\t\t"
-        << char(169)
-        << " Living in America. SAULT"
-        << "\n"
-        << "\n"
-        << "\n"
-        << "\n"
-        << "\n"
-        << "\n";
-               
-
-
-
-
-
-
+    std::cout << "Hello World!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
