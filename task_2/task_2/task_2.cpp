@@ -16,27 +16,27 @@ int main()
         << "Каждый\n";
 
     SetConsoleTextAttribute(Console, 6);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t"
         << "Охотник\n";
 
     SetConsoleTextAttribute(Console, 14);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t\t"
         << "Желает\n";
 
     SetConsoleTextAttribute(Console, FOREGROUND_GREEN);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t\t\t"
         << "Знать \n";
 
     SetConsoleTextAttribute(Console, 3);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t\t\t\t"
         << "Где \n";
 
     SetConsoleTextAttribute(Console, 1);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t\t\t\t\t"
         << "Сидит \n";
 
     SetConsoleTextAttribute(Console, 5);
-    cout << "\t\t\t\t\t"
+    cout << "\t\t\t\t\t\t\t\t\t\t\t"
         << "Фазан \n";
 
         
