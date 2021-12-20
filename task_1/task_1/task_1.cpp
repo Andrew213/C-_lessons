@@ -4,17 +4,15 @@ using namespace std;
 
 int main()
 {
+	setlocale(0, "Ru");
 
-    setlocale(0, "Ru");
-    int seconds = 0, minutes = 0, hours = 0;
+	int time = 0, km = 0;
 
-    cout << "Введите время в секундах: ";
-    cin >> seconds;
-    hours = seconds / 3600;
-    minutes = (seconds / 60) - (hours * 60);
-    seconds = seconds % 60;
-
-    cout << "Часов: " << hours << "\n" << "Минут: " << minutes << "\n" << "Секунд: " << seconds;
+	cout << "Введите кол-во минут: ";
+	cin >> time;
+	cout << "Введите расстояние (км): ";
+	cin >> km;
+	cout << "Скорость составляет: " << km / (time / 60) << " км/ч";
 
 }
 
