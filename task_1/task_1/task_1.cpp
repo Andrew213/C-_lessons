@@ -1,18 +1,24 @@
 ﻿#include <iostream>
 
+
 using namespace std;
 
 int main()
 {
-	setlocale(0, "Ru");
 
-	int time = 0, km = 0;
+	setlocale(0, "ru");
 
-	cout << "Введите кол-во минут: ";
-	cin >> time;
-	cout << "Введите расстояние (км): ";
-	cin >> km;
-	cout << "Скорость составляет: " << km / (time / 60) << " км/ч";
+	int currentSec = 0;
+	int const midnightSeconds = 86400;
 
+	cout << "Введите время в сек: ";
+	cin >> currentSec;
+	int difference = midnightSeconds - currentSec;
+	int hours = difference / 3600;
+	int minutes = difference %3600/60;
+	int seconds = difference %60;
+	
+	cout << "До полуночи осталось: ";
+	cout << hours << " " << minutes << " " << seconds << endl;
 }
 

@@ -1,40 +1,24 @@
 ﻿#include <iostream>
+
+
 using namespace std;
-
-float transformTime(float userHours, float userMinutes, float userSeconds) {
-    float hoursInMinutes = userHours * 60;
-    float userSecondsInMinutes = userSeconds / 60;
-    
-    return hoursInMinutes + userSecondsInMinutes + userMinutes;
-
-};
 
 int main()
 {
 
-    setlocale(0, "Ru");
+	setlocale(0, "ru");
 
-    float hoursS = 0, minutesS = 0, secondsS = 0;
-    float hoursE = 0, minutesE = 0, secondsE = 0;
-    int const rate = 2;
+	int currentSec = 0;
+	int const workingSeconds = 28800;
 
-    cout << "Введите начало поездки(часы): ";
-    cin >> hoursS;
-    cout << "Введите начало поездки(минуты): ";
-    cin >> minutesS;
-    cout << "Введите начало поездки(секунды): ";
-    cin >> secondsS;
+	cout << "Введите время в сек: ";
+	cin >> currentSec;
+	int difference = workingSeconds - currentSec;
+	int hours = difference / 3600;
+	int minutes = difference % 3600 / 60;
+	int seconds = difference % 60;
 
-    cout << "Введите конец поездки(часы): ";
-    cin >> hoursE;
-    cout << "Введите конец поездки(минуты): ";
-    cin >> minutesE;
-    cout << "Введите конец поездки(секунды): ";
-    cin >> secondsE;
-
-    cout << "Стоимость поездки составляет: " << (transformTime(hoursE, minutesE, secondsE) - transformTime(hoursS, minutesS, secondsS)) * rate << endl;
-
-
-
+	cout << "До конца рабочего дня осталось: ";
+	cout << hours << " " << minutes << " " << seconds << endl;
 }
 
